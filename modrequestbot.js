@@ -1,4 +1,4 @@
-// This script sends responses to the Comfy Valheim discord server so we get alerted.
+// This script sends responses to the Comfy Valheim discord server so we get alerted when someone requests a mod.
 // This script gets placed in a Google Form, the webhook comes from Discord.
 // Jem Cope 2021 - GNU General Public License v3.0
 var POST_URL = "GET A WEBHOOK URL FROM DISCORD INTEGRATIONS AND PUT IT HERE";
