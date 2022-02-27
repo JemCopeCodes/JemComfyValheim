@@ -1,6 +1,6 @@
 // This script sends responses to the Comfy Valheim discord server so we get alerted when someone requests a mod.
 // This script gets placed in a Google Form, the webhook comes from Discord.
-var POST_URL = "GET A WEBHOOK URL FROM DISCORD INTEGRATIONS AND PUT IT HERE";
+var POST_URL = "GET A WEBHOOK URL FROM DISCORD INTEGRATIONS AND PUT IT HERE?thread_id=If you want the bot to post into just a thread put the thread ID here.";
 
 function onSubmit(e) {
     var form = FormApp.getActiveForm();
@@ -46,10 +46,13 @@ function onSubmit(e) {
         "payload": JSON.stringify({
             "content": "‌",
             "embeds": [{
-                "title": "New Mod Requested!",
-                "url": "https://docs.google.com/spreadsheets/d/15G1Cer8zsjnraBdPLEavUB34BEra9CaBEeoLTBfWl4I/edit?usp=sharing",
+                "title": "New Builder Project Submitted!",
+                "url": "https://docs.google.com/spreadsheets/d/12OPCS9K8XhtAtwYu4KPFQXtXH-hK2tSBmxxdeOZ6qDc/edit?usp=sharing",
               "color": 0x6ff2df,
                 "fields": items,
+                "image": {
+                  "url": "https://drive.google.com/uc?id=" + items.find(x => x.name === 'Image Upload').value
+                },
                 timestamp: new Date(),
                 "footer": {
                     "text": "Issues with the bot? Contact Jemmeh." 
