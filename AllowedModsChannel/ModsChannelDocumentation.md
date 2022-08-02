@@ -1,3 +1,5 @@
+This is the text for the #allowed-mods channel for Comfy Valheim.
+
 ## Allowed Mods
 
 Comfy Valheim is vanilla-friendly, so feel free to play without any mods at all. 
